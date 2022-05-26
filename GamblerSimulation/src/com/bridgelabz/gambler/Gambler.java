@@ -31,11 +31,11 @@ public class Gambler {
         numberOfPlay++;
         if(winOrLoss()){
             stack+=betPrice;
-            stack = stack - 50;
+            stack = stack/2;
             numberOfWins++;}
         else{
             stack-=betPrice;
-            stack = stack - 50;
+            stack = stack/2;
             numberOfLoss++;}
 
         if(stack<=0 || stack>=goal)
