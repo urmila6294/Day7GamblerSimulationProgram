@@ -1,23 +1,31 @@
 package com.bridgelabz.gambler;
 
 public class Gambler {
+    int betPrice = 0;
+    int numberOfPlay = 0;
+    int goal = 0;
+    int stack = 100;
+
+
     public static void main(String[] args) {
 
         System.out.println("Gambler simulation program");
-        int stake = 100;
-        int betPrice = 1;
+        winOrLoss();
+        System.out.println(winOrLoss());
+
 
     }
-}
 
-   /* public boolean winOrLoss(){
+    public static boolean winOrLoss(){
         if(Math.random()<0.5)
-            return true;
-        else
-            return false;
-    }
+                return true;
+         else
+                return false;
 
-    public void playGame(){
+        }
+
+
+    /*public void playGame(){
         numberOfPlay++;
         if(winOrloss())
             stack+=betPrice;
@@ -27,5 +35,5 @@ public class Gambler {
             return;
         else
             playGame();
-    }
-}*/
+    }*/
+}
